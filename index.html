@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio-website</title>
+    <link rel="stylesheet" href="style/protfolio.css" />
+    <link rel="stylesheet" href="style/font-awesome.css" />
+  </head>
+  <body>
+    <!--------Page Loader Start--------->
+    <div class="page-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!--------Page Loader End--------->
+
+    <!-- -----  Overlay start ------   ----->
+    <div class="overlay"></div>
+    <!-- -----  Overlay end ------   ----->
+
+    <!------------Background Circle Start------->
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+    <!------------Background Circle end------->
+
+    <!--Main Start-->
+    <div class="main hidden">
+      <!---------Header Start------->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button type="button" class="nav-toggler">
+              <span> </span>
+            </button>
+            <nav class="nav">
+              <div class="nav-inner">
+                <ul>
+                  <li><a href="#home" class="nav-item link-item">home</a></li>
+                  <li><a href="#about" class="nav-item link-item">about</a></li>
+                  <li>
+                    <a href="#portfolio" class="nav-item link-item"
+                      >portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-item link-item">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!---------Header End------->
+      <!--Home Section Start-->
+      <section class="home-section align-items-center active" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="home-text">
+              <p>Hello, I'm</p>
+              <h1>Binshi M</h1>
+              <h2>Fulll Stack Web-Developer</h2>
+              <a href="#about" class="btn link-item">more about me</a>
+              <a href="#portfolio" class="btn link-item">protfolio</a>
+            </div>
+            <div class="home-img">
+              <div class="img-box">
+                <img src="img/pp.png" alt="profile-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Home Section End-->
+      <!--About Section Start-->
+      <section class="about-section sec-padding" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>about me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-img">
+              <div class="img-box">
+                <img src="img/mine.png" alt="about-img" />
+              </div>
+            </div>
+            <div class="about-text">
+              <table>
+                <tr>
+                  <td>Name -</td>
+                  <td>Binshi</td>
+                </tr>
+                <tr>
+                  <td>Age -</td>
+                  <td>21</td>
+                </tr>
+
+                <tr>
+                  <td>Place -</td>
+                  <td>Calicut, Kerala</td>
+                </tr>
+              </table>
+              <p>
+                I am an alround web developer. I am a fresher programmer with
+                good knowledge of front-end techniques. I love structure and
+                order and I also stand for quality. I love spending time on
+                fixing little details and optimizing web apps. I love combining
+                the worlds of logic and creative design to make
+                eye-catching,accessible and user-friendly websites and
+                applications.
+              </p>
+              <h3>skills</h3>
+              <div class="skills">
+                <div class="skill-item">html</div>
+                <div class="skill-item">css</div>
+                <div class="skill-item">javascript</div>
+                <div class="skill-item">Nodejs</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">bootstrap</div>
+                <div class="skill-item">postman</div>
+                <div class="skill-item">mongoDB</div>
+                <div class="skill-item">TMDB</div>
+              </div>
+              <div class="about-tabs">
+                <button
+                  type="button"
+                  class="tab-item active"
+                  data-targete="#eduction"
+                >
+                  education
+                </button>
+
+                <!-- <button type="button" class="tab-item" data-targete="#fresher">
+                  fresher
+                </button> -->
+              </div>
+              <!---------Eduction Start---------->
+              <div class="tab-content" id="education">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="date">2018-2021</span>
+                    <h4>
+                      bachelour of computer science -
+                      <span>calicut university </span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ullam, aperiam.
+                      </p>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <!---------Eduction End----------->
+
+              <!-----experience start---->
+              <!-----experience end---->
+              <a href="documents/BINSHI M.pdf" target="_blank" class="btn"
+                >download cv</a
+              >
+              <a href="#contact" class="btn link-item">contact me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End  -->
+
+      <!------Porfolio Section Start----->
+      <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>recent work</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-----portfolio-item start-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/jobportal.png" alt="portfolio item thumb" />
+              </div>
+              <h3 class="portfolio-item-title">job-portal website</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates, qui?
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>created - <span>4 Feb 2022</span></li>
+                    <li>Technologies Used - <span>html ,css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      view online -
+                      <span><a href="#" target="_blank"></a></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-----portfolio-item end-->
+            <!-----portfolio-item start-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/task.png" alt="portfolio item thumb" />
+              </div>
+              <h3 class="portfolio-item-title">Task Manager website</h3>
+              <button type="" class="btn view-project-btn">view project</button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates, qui?
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>created - <span>4 Feb 2022</span></li>
+                    <li>Technologies Used - <span>html ,css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      view online -
+                      <span><a href="#" target="_blank"></a></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!---portfolio-item end-->
+            <!-----portfolio-item start-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="img/netflix.png" alt="portfolio item thumb" />
+              </div>
+              <h3 class="portfolio-item-title">netflix-clone</h3>
+              <button type="" class="btn view-project-btn">view project</button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates, qui?
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>created - <span>4 Feb 2022</span></li>
+                    <li>Technologies Used - <span>html ,css</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      view online -
+                      <span><a href="#" target="_blank"></a></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-----portfolio-item end-->
+          </div>
+        </div>
+      </section>
+      <!------Porfolio Section End----->
+
+      <!--------- COntact section start-->
+      <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>contact me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <textarea
+                      placeholder="Message"
+                      class="input-control"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit" class="btn">send message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3><i class="fas fa-envelope-open-text"> </i>Email</h3>
+                <p>binshiferoke@gmail.com</p>
+              </div>
+              <div class="contact-info-item">
+                <h3><i class="fas fa-mobile-alt"></i>Phone</h3>
+                <p>91 9645285573</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                  <a
+                    href="https://www.facebook.com/binshi.jo.3/"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://twitter.com/BinshiJo1" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/_binshi_jo/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------- COntact section end-->
+    </div>
+    <!--Main End-->
+    <!-----Portfolio Item Details Popup start-->
+    <div class="portfolio-popup" id="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button type="button" class="btn pp-close" id="pp-close">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="pp-thumbnail">
+              <img src="img/jobportal.png" alt="pp-thumbnail" />
+            </div>
+            <h3>app landing page</h3>
+          </div>
+          <div class="pp-body">
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates, qui?
+              </p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li>created - <span>4 Feb 2022</span></li>
+                <li>Technologies Used - <span>html ,css</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>
+                  view online -
+                  <span><a href="#" target="_blank"></a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/portfolio.js"></script>
+    <!-----Portfolio Item Details Popup end-->
+  </body>
+</html>
